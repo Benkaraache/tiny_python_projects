@@ -50,6 +50,15 @@ def test_consonant_upper():
         assert out.strip() == template.format('a', word.title())
 
 
+# # --------------------------------------------------
+# def test_consonant_match_case():
+#     """Narwhal -> A Narwhal"""
+
+#     for word in vowel_words:
+#         out = getoutput(f'{prg} {word.capitalize()}')
+#         assert out.strip() == template.format('A', word.upper())
+
+
 # --------------------------------------------------
 def test_vowel():
     """octopus -> an octopus"""
@@ -66,3 +75,13 @@ def test_vowel_upper():
     for word in vowel_words:
         out = getoutput(f'{prg} {word.upper()}')
         assert out.strip() == template.format('an', word.upper())
+
+
+# # --------------------------------------------------
+# def test_vowel_match_case():
+#     """Octopus -> An Octopus"""
+
+#     for word in vowel_words:
+#         out = getoutput(f'{prg} {word.capitalize()}')
+#         assert out.strip() == template.format('An', word.upper())
+
